@@ -1,0 +1,827 @@
+* {
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafa;
+    color: black;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    /* width: ; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f9fafa;
+}
+
+/* header message */
+
+
+#header {
+    position: fixed;
+    /* background:fixed; */
+    z-index: 1;
+    width: 100%;
+}
+
+#top-msg {
+    position: fixed;
+    display: inline;
+    width: 100%;
+    top: 0;
+
+    text-align: center;
+    border: 1px solid transparent;
+    align-items: center;
+    background: rgb(237 229 223);
+    z-index: 1;
+}
+
+#top-msg h3 {
+
+
+    color: rgb(30, 29, 29, 87%);
+    font-size: 14px;
+    font-weight: 600;
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#top-msg h3 a {
+    text-decoration: none;
+    color: rgb(30, 29, 29, 87%);
+    width: 100%;
+}
+
+
+/* nav bar */
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+    background-color: #f9fafa;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar #logo {
+
+    /* margin-left: 14px; */
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(30, 29, 29, 87%);
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+#navbar nav {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#nav-menu {
+    justify-content: center;
+}
+
+#navbar #nav-menu ul {
+
+    list-style-type: none;
+    display: inline-block;
+}
+
+#navbar #nav-menu ul li {
+    display: inline-block;
+    margin-right: 28px;
+    position: relative;
+}
+
+#navbar #nav-menu ul li a {
+    text-decoration: none;
+    color: rgb(30, 29, 29, 87%);
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.3s ease;
+}
+
+/* nav cart */
+.nav-right {
+    display: inline;
+    position: absolute;
+    right: 60px;
+    text-decoration: none;
+
+}
+
+#Nav-cart {
+
+    font-size: 26px;
+    list-style: none;
+
+}
+#Nav-cart:before{
+    content: attr(data-count);
+    color: brown;
+    position: absolute;
+     left: 2px;
+    font-size: 16px;
+    text-align: center;
+    top: 9px;
+     font-weight: 900;
+    opacity: 0;
+    width: 20px;
+}
+
+#Nav-cart.zero:before{
+    opacity: 1;
+}
+#Nav-cart a {
+    color: rgb(30, 29, 29, 87%);
+}
+
+#Nav-cart a:hover {
+    color: brown;
+}
+
+
+/* menu bar section */
+
+.menu-bar {
+    display: none;
+    position: absolute;
+    float: right;
+    right: 39px;
+    font-size: 20px;
+    color: rgb(30, 29, 29, 87%);
+}
+
+.menu-bar:hover {
+    color: brown;
+}
+
+
+#navbar #nav-menu ul li a:hover  {
+    color: brown;
+}
+
+ 
+#Nav-cart a {
+    color: rgb(30, 29, 29, 87%);
+    text-decoration: none;
+    
+
+}
+#Nav-cart span{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    color: brown;
+    position: relative;
+    right: 18px;
+    bottom: 2px;
+}
+
+
+
+/* Section Mid -msg*/
+
+
+#mid-msg {
+    top: 6em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#mid-msg article {
+
+    text-align: center;
+    position: relative;
+
+    width: 100%;
+
+}
+
+#mid-msg article h1 {
+    font-size: 3.7em;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(30, 29, 29, 87%);
+    align-items: center;
+    width: 100%;
+}
+
+/* Top Button */
+
+
+.shop_button .btn {
+
+    position: absolute;
+    top: 16.5em;
+
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.shop_button .btn a {
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid brown;
+    border-radius: 5px;
+    background-color: brown;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.shop_button .btn a:hover {
+    color: rgb(253, 253, 253);
+    background-color: #114511;
+    border: 1px solid #114511;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+/* Category */
+
+
+#Category {
+    top: 25em;
+    /* display: flex; */
+    position: relative;
+    overflow: hidden;
+}
+
+/* category-name */
+.category-name {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.category-name h3 {
+    color: black;
+    cursor: pointer;
+    display: inline;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(30, 29, 29, 89%);
+}
+
+#Category .category-image {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#Category .category-image a {
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+    cursor: default
+}
+
+.image-sec {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#Category .category-image a .img {
+
+    overflow: hidden;
+    width: 120%;
+    height: 100%;
+
+}
+
+.category-image a img {
+    transform: scale(1);
+    transition: 1.1s ease;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.category-image a .image-sec:hover img {
+    transform: scale(1.1);
+}
+
+/* Product-Best Selling Section */
+
+
+#Product-Best-Sale-Section {
+    position: relative;
+    overflow: hidden;
+    top: 410px;
+
+}
+
+#Product-Best-Sale-Section h2 {
+    text-align: center;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(30, 29, 29, 87%);
+    justify-content: center;
+}
+
+#Product-Best-Sale-Section .product-container {
+    padding: 0 0%;
+    display: flex;
+    margin: 40px 0;
+    /* margin-left: 6%;
+    margin-right: 6%; */
+    align-items: center;
+    /* justify-content: center; */
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#Product-Best-Sale-Section .product-container .product-card {
+
+    /* flex: 0 0 auto; */
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+
+    /* min-width: 150px; */
+    margin: 0px 40px;
+    cursor: pointer;
+    overflow: hidden;
+    /* border: 1px solid #cce7d0;
+    border-radius: 20px; */
+    padding: 10px 12px;
+
+
+}
+
+#Product-Best-Sale-Section .product-container .product-card a {
+    overflow: hidden;
+    display: block;
+}
+
+#Product-Best-Sale-Section .product-container .product-card .product-img {
+    position: relative;
+    width: 100%;
+
+    overflow: hidden;
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    object-fit: cover;
+    display: block;
+}
+
+#Product-Best-Sale-Section .product-container .product-card:hover .product-img {
+
+
+    transform: scale(1.2);
+
+
+}
+
+#Product-Best-Sale-Section .product-container .product-card p {
+
+    font-family: 'Rajdhani';
+    font-weight: 500;
+
+
+}
+
+.product-price {
+    margin-top: -10px;
+}
+
+/* Footer Section */
+
+
+
+
+footer {
+    position: relative;
+    top: 25em;
+
+}
+
+
+/*Footer top section  */
+
+
+footer #footer-top .msg {
+    text-align: center;
+
+    height: auto;
+    padding-top: 70px;
+    margin-bottom: 20px;
+}
+
+footer .msg p {
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    font-family: 'Rajdhani';
+    margin: 0%;
+
+}
+
+#footer-top {
+    width: 100%;
+    height: 340px;
+    background: #ebeeee;
+}
+
+/* Footer Form Section */
+
+footer .form {
+
+    text-align: center;
+    top: 30px;
+    position: relative;
+
+}
+
+
+footer form .email {
+
+    width: 35%;
+    padding-top: 12px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    border-style: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(34, 34, 34);
+    color: black;
+    padding-left: 8px;
+    background-color: #ebeeee;
+    outline: none;
+}
+
+footer form .email:hover::placeholder {
+    transform: translateY(-3px);
+    transition: all 0.1s linear;
+}
+
+
+
+footer .button {
+    margin-top: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    width: 35%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(30, 29, 29, 96%);
+    color: white;
+    border: 1px solid rgb(30, 29, 29, 96%);
+    white-space: nowrap;
+    transition: 1.5 ease-out 0s;
+}
+
+footer .button:hover {
+    background-color: white;
+    color: rgb(30, 29, 29, 87%);
+
+    transition: 0.5s ease-in-out;
+}
+
+
+/* footer mid Section */
+
+footer #footer-mid {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(30, 29, 29, 96%);
+}
+
+#footer-mid .footer-items {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+#footer-mid .footer-items a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+#footer-mid .footer-items a:hover {
+    color: #fff;
+
+}
+
+#footer-mid .footer-items a i {
+    font-size: 2em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/* Footer End Section */
+
+
+#footer-end {
+    text-align: center;
+    justify-content: center;
+    padding: 0.2% 0%;
+    width: 100%;
+    background-color: rgb(226, 219, 208);
+}
+
+#footer-end .footer-web-develop {
+    color: rgb(30, 29, 29, 87%);
+    font-size: 14px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+
+/* Media querry  for responsive */
+
+@media(min-width:1340px) {
+    #top-msg {
+        height: 55px;
+    }
+
+    #top-msg h3 {
+        font-size: 18px;
+        font-weight: 900;
+
+    }
+
+    #navbar {
+
+        margin-top: 55px;
+
+    }
+
+    #navbar #logo {
+
+
+
+        font-weight: 900;
+        color: rgb(30, 29, 29, 87%);
+        font-size: 26px;
+
+    }
+
+    #navbar #nav-menu ul li a {
+
+        color: rgb(30, 29, 29, 87%);
+        font-weight: 500;
+
+        font-size: 22px;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    #Nav-cart {
+        font-size: 26px;
+
+    }
+
+    .menu-bar {
+        font-size: 24px;
+    }
+
+    #mid-msg {
+        top: 8em;
+    }
+
+    .shop_button .btn {
+        top: 17.8em;
+    }
+
+    .shop_button .btn a {
+        font-size: 18px;
+    }
+
+
+    #Category {
+        top: 27em;
+    }
+
+    .category-name h3 {
+
+        font-size: 24px;
+    }
+
+
+    #Product-Best-Sale-Section {
+        top: 455px;
+    }
+
+    #Product-Best-Sale-Section h2 {
+        font-size: 28px;
+    }
+
+
+    footer {
+        top: 27em;
+    }
+
+    #footer-mid .footer-items {
+        font-size: 1em;
+    }
+
+    #footer-end .footer-web-develop {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:670px) and (max-width:780px) {
+
+    #navbar #nav-menu ul li {
+        right: 58px;
+    }
+
+    #mid-msg {
+        top: 6.8em;
+    }
+
+    #mid-msg article h1 {
+        font-size: 3em;
+    }
+
+    #Category .category-image a .img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+@media only screen and (min-width:420px) and (max-width:550px) {
+
+    /* menu section */
+
+    #navbar #nav-menu ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: 0;
+        text-align: center;
+
+    }
+
+    /* end menu section */
+
+    #navbar #logo {
+
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+
+    #top-msg {
+        height: 38px;
+    }
+
+    #top-msg h3 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #navbar {
+        margin-top: 37px;
+        height: 45px;
+    }
+
+    #mid-msg {
+        top: 8em;
+        right: 4px;
+    }
+
+    #mid-msg article h1 {
+        font-size: 2em;
+    }
+
+    .shop_button .btn {
+        top: 15.5em;
+    }
+
+    .shop_button .btn a {
+        font-size: 14px;
+    }
+
+    #Category {
+        top: 21em;
+    }
+
+    #Category .category-image {
+        float: none;
+        width: 100%;
+    }
+
+    #Category .category-image a .img {
+        width: 100%;
+    }
+
+    .a {
+        margin: 5px 20px;
+    }
+
+    .category-name {
+        padding-bottom: 15px;
+    }
+
+
+    #Product-Best-Sale-Section {
+        top: 356px;
+
+    }
+
+
+
+    #Product-Best-Sale-Section .product-container .product-card {
+
+
+        width: 36%;
+        margin: 0 30px;
+
+
+
+    }
+
+
+    #footer-top {
+        height: 300px;
+        margin-bottom: -25px;
+    }
+
+    footer #footer-top .msg {
+
+        padding-top: 47px;
+        margin-bottom: 0;
+    }
+
+    footer .msg p {
+        font-size: 24px;
+    }
+
+    footer form .email {
+
+        width: 66%;
+        padding-top: 12px;
+    }
+
+    footer .button {
+        width: 66%;
+    }
+
+    #footer-mid .footer-items {
+        font-size: 0.7em;
+    }
+
+    #footer-mid .footer-items a i {
+
+        margin-left: 5%;
+    }
+
+}

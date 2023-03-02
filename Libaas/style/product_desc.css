@@ -1,0 +1,511 @@
+ body{
+    margin: 0;
+    padding: 0;
+ }
+ html{
+    scroll-behavior: smooth;
+}
+#header {
+    position: fixed;
+    /* background:fixed; */
+    z-index: 1;
+    width: 100%;
+}
+
+#top-msg {
+    position: fixed;
+    display: inline;
+    width: 100%;
+    top: 0;
+
+    text-align: center;
+    border: 1px solid transparent;
+    align-items: center;
+    background: rgb(237 229 223);
+    z-index: 1;
+}
+
+#top-msg h3 {
+
+
+    color: rgb(30, 29, 29, 87%);
+    font-size: 14px;
+    font-weight: 600;
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#top-msg h3 a {
+    text-decoration: none;
+    color: rgb(30, 29, 29, 87%);
+    width: 100%;
+}
+
+
+/* nav bar */
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+    background-color: #f9fafa;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar #logo {
+
+    /* margin-left: 14px; */
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(30, 29, 29, 87%);
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+#navbar nav {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#nav-menu {
+    justify-content: center;
+}
+
+#navbar #nav-menu ul {
+
+    list-style-type: none;
+    display: inline-block;
+}
+
+#navbar #nav-menu ul li {
+    display: inline-block;
+    margin-right: 28px;
+    position: relative;
+}
+
+#navbar #nav-menu ul li a {
+    text-decoration: none;
+    color: rgb(30, 29, 29, 87%);
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.3s ease;
+}
+
+/* nav cart */
+.nav-right {
+    display: inline;
+    position: absolute;
+    right: 80px;
+    text-decoration: none;
+
+}
+#Nav-cart:before{
+    cursor: pointer;
+    content: attr(data-count);
+    color: brown;
+    position: absolute;
+     left: 2px;
+    font-size: 16px;
+    text-align: center;
+    top: 9px;
+     font-weight: 900;
+    opacity: 0;
+    width: 20px;
+}
+
+#Nav-cart.zero:before{
+    opacity: 1;
+    cursor: pointer;
+}
+#Nav-cart {
+
+    font-size: 26px;
+    list-style: none;
+
+}
+
+#Nav-cart a {
+    color: rgb(30, 29, 29, 87%);
+}
+
+#Nav-cart a:hover {
+    color: brown;
+}
+
+#Nav-cart.display{
+    top: 10px;
+}
+#Nav-cart a {
+    color: rgb(30, 29, 29, 87%);
+    text-decoration: none;
+    
+
+}
+#Nav-cart span{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    color: brown;
+    position: relative;
+    right: 18px;
+    bottom: 2px;
+}
+/* menu bar section */
+
+.menu-bar {
+    display: inline;
+    position: absolute;
+    float: right;
+    right: 39px;
+    font-size: 20px;
+    color: rgb(30, 29, 29, 87%);
+}
+
+.menu-bar:hover {
+    color: brown;
+}
+
+
+#navbar #nav-menu ul li a:hover
+ {
+    color: brown;
+}
+
+ 
+#navbar #nav-menu ul li a:hover::after,
+.nav-right #Nav-cart a:hover::after {
+
+    content: "";
+    height: 2px;
+    width: 50%;
+    background: brown;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+
+}
+
+/* Top Message Section */
+
+#msg {
+    top: 6em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Product Detail Section */
+
+#product-detail {
+
+    position: absolute;
+    top: 140px;
+    display: flex;
+
+}
+
+.container {
+    position: relative;
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: row;
+    left: 100px;
+}
+
+.left-img {
+    width: 30%;
+    height: auto;
+    display: block;
+    top: 20px;
+    object-fit: cover;
+    position: relative;
+
+
+}
+
+.left-img img {
+    width: 90%;
+    object-fit: cover;
+
+
+}
+
+.right-img-desc {
+    
+    margin-right: 17em;
+    width: 50%;
+    margin-left: 100px;
+    padding: 15px 0px 2rem 1rem;
+    
+}
+
+
+
+.right-img-desc h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+}
+.right-img-desc .pro-price{
+    display: flex;
+}
+.product-price {
+     margin-top: 21px;
+     margin-left: 15px;
+     align-items: center;
+}
+
+.right-img-desc h4 {
+
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+}
+
+.right-img-desc .line-break1 {
+    height: 1.8px;
+    background-color: #0009;
+    margin: 0rem;
+}
+
+.product-color {
+    display: flex;
+}
+
+.product-color h4 {
+    display: inline;
+    margin-right: 45px;
+
+}
+
+.product-color input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: 19px;
+        left: -1px;
+        position: relative;
+        background-color: #ffffff;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #0009;
+    }
+
+
+
+.right-img-desc .Cloth-size {
+    display: inline;
+    margin-right: 60px;
+}
+form{
+    display: inline;
+}
+.right-img-desc .select-size {
+
+    text-align: center;
+    margin-left: 10px;
+    width: 35%;
+    height: 30px;
+    font-size: 14px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+}
+
+.right-img-desc .select-size option {
+    font-size: 14px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+}
+
+.right-img-desc .pro-total-piece {
+
+    width: 20%;
+    height: 22px;
+    padding-top: 3px;
+    text-align: center;
+    margin-left: 5px;
+}
+.right-img-desc .line-break2 {
+    height: 1.8px;
+    background-color: #0009;
+    margin-top: 20px;
+}
+.right-img-desc .gender {
+    display: flex;
+}
+
+.gender h4, p{
+    display: inline;
+
+}
+
+.gender p {
+    padding-top: 5px;
+    font-size: 16px;
+    font-family: 'Maven Pro', sans-serif;
+    margin-left: 45px;
+}
+.line-break{
+    margin-top: 10px;
+}
+
+.right-img-desc .buy-btn {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.right-img-desc .buy-btn input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    height: 45px;
+    background: black;
+    color: white;
+     
+    font-family: 'Maven Pro', sans-serif;
+    text-transform:capitalize;
+    cursor: pointer;
+    
+    outline: none;
+}
+.right-img-desc .buy-btn :hover {
+    background: rgb(42, 39, 39);
+    transition: 0.3s ease-in-out;
+    /* border: none; */
+    
+}
+
+
+
+
+/* footer */
+
+footer{
+    position: absolute;
+    top: 45em;
+}
+
+.banner{
+    width: 100%;
+    height: 10%;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display:block;
+ 
+
+}
+.banner .banner-img{
+    width: 100%;
+    object-fit: cover;
+     
+    
+}
+.banner .banner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 50%;
+ 
+    position: relative;
+}
+
+
+.banner-name{
+    
+    display: inline;
+    position: relative;
+    text-align: center;
+    bottom: 180px;
+    align-items: center;
+
+}
+.banner-name h3{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Maven Pro', sans-serif;
+    text-transform:capitalize;
+}
+
+
+
+/* footer */
+
+
+footer #footer-mid {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(30, 29, 29, 96%);
+}
+
+#footer-mid .footer-items {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+#footer-mid .footer-items a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+#footer-mid .footer-items a:hover {
+    color: #fff;
+
+}
+
+#footer-mid .footer-items a i {
+    font-size: 2em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/* Footer End Section */
+
+
+#footer-end {
+    text-align: center;
+    justify-content: center;
+    padding: 0.2% 0%;
+    width: 100%;
+    background-color: rgb(226, 219, 208);
+    top: -50px;
+}
+
+#footer-end .footer-web-develop {
+    color: rgb(30, 29, 29, 87%);
+    font-size: 14px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    display: inline;
+    
+}

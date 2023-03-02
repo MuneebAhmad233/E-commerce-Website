@@ -1,0 +1,320 @@
+
+/*  */
+
+
+#header {
+    position: fixed;
+    /* background:fixed; */
+    z-index: 1;
+    width: 100%;
+}
+
+#top-msg {
+    position: fixed;
+    display: inline;
+    width: 100%;
+    top: 0;
+
+    text-align: center;
+    border: 1px solid transparent;
+    align-items: center;
+    background: rgb(237 229 223);
+    z-index: 1;
+}
+
+#top-msg h3 {
+
+
+    color: rgb(30, 29, 29, 87%);
+    font-size: 14px;
+    font-weight: 600;
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#top-msg h3 a {
+    text-decoration: none;
+    color: rgb(30, 29, 29, 87%);
+    width: 100%;
+}
+
+
+/* nav bar */
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    background-color: #f9fafa;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar #logo {
+
+    /* margin-left: 14px; */
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Maven Pro', sans-serif;
+    color: rgb(30, 29, 29, 87%);
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+#navbar nav {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#nav-menu {
+    justify-content: center;
+}
+
+#navbar #nav-menu ul {
+
+    list-style-type: none;
+    display: inline-block;
+}
+
+#navbar #nav-menu ul li {
+    display: inline-block;
+    margin-right: 28px;
+    position: relative;
+}
+
+#navbar #nav-menu ul li a {
+    text-decoration: none;
+    color: rgb(30, 29, 29, 87%);
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.3s ease;
+}
+
+/* nav cart */
+.nav-right {
+    display: inline;
+    position: absolute;
+    right: 60px;
+    text-decoration: none;
+
+}
+
+#Nav-cart {
+
+    font-size: 26px;
+    list-style: none;
+
+}
+#Nav-cart:before{
+    content: attr(data-count);
+    color: brown;
+    position: absolute;
+     left: 2px;
+    font-size: 16px;
+    text-align: center;
+    top: 9px;
+     font-weight: 900;
+    opacity: 0;
+    width: 20px;
+}
+
+#Nav-cart.zero:before{
+    opacity: 1;
+}
+#Nav-cart a {
+    color: rgb(30, 29, 29, 87%);
+}
+
+#Nav-cart a:hover {
+    color: brown;
+}
+
+
+/* menu bar section */
+
+.menu-bar {
+    display: none;
+    position: absolute;
+    float: right;
+    right: 39px;
+    font-size: 20px;
+    color: rgb(30, 29, 29, 87%);
+}
+
+.menu-bar:hover {
+    color: brown;
+}
+
+
+#navbar #nav-menu ul li a:hover  {
+    color: brown;
+}
+
+ 
+
+
+/*  */
+main{
+
+    position: relative;
+    top: 8em;
+}
+
+.heading{
+    position: relative;
+    text-align: center
+}
+.heading h2{
+    font-family: "Inter var", sans-serif;
+    font-size: 28px;
+
+}
+
+
+
+
+
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+  --color-gray: #737888;
+  --color-lighter-gray: #e3e5ed;
+  --color-light-gray: #f7f7fa;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--color-gray);
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: #0009;
+  border: 0;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.container {
+  max-width: 40rem;
+  padding: 20px 30px 0;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.form {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-lighter-gray);
+  padding: .5rem;
+  border-radius: .25rem;
+}
+
+.field__label {
+  color: var(--color-gray);
+  font-size: 0.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem
+}
+
+.field__input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+
+}
+.field:focus-within {
+  border-color: #000;
+}
+
+.fields {
+  display: grid;
+  grid-gap: 1rem;
+}
+.fields--2 {
+  grid-template-columns: 1fr 1fr;
+}
+.fields--3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button {
+  background-color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+}
+.button:focus-visible {
+  background-color: #333;
+}
+
+.radio{
+
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+.radio  input[type='radio']{
+
+margin-left: 20px;
+    margin-right: 20px;
+
+}

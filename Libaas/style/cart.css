@@ -1,0 +1,477 @@
+*{
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafa;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+                                             /* header message */
+
+
+ #header{
+    position:fixed;
+    background:fixed;
+    z-index: 1;
+    width: 100%;
+ }
+#top-msg{
+    position: fixed;
+    display: inline;
+    width: 100%;
+    top: 0;
+
+    text-align: center;
+    border: 1px solid transparent;
+    align-items: center;
+    background: rgb(237 229 223);
+    z-index: 1;
+} 
+#top-msg h3{
+    
+    text-align: center;
+    color: rgb(30, 29, 29,87%);
+    font-size: 14px;
+    font-weight: 600;
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+#top-msg h3 a{
+    text-decoration: none;
+    color: rgb(30, 29, 29 ,87%) ;
+    width: 100%;
+}
+
+
+     /* nav bar */
+
+
+
+      #navbar {
+            display: flex;
+       align-items: center;
+                 margin-top: 44px;
+ background-color: #f9fafa;
+                                                justify-content: center;
+                                                position: fixed;
+                                                width: 100%;
+                                                z-index: 1;
+                                            }
+                                            
+                                            #navbar #logo {
+                                            
+                                                /* margin-left: 14px; */
+                                                text-decoration: none;
+                                                font-weight: 900;
+                                                color: rgb(30, 29, 29, 87%);
+                                                font-size: 22px;
+                                                padding-left: 20px;
+                                            }
+                                            
+                                            #navbar nav {
+                                            
+                                                display: flex;
+                                                flex-direction: column;
+                                                height: 100%;
+                                                width: 100%;
+                                                text-align: center;
+                                            }
+                                            
+                                            #nav-menu {
+                                                justify-content: center;
+                                            }
+                                            
+                                            #navbar #nav-menu ul {
+                                            
+                                                list-style-type: none;
+                                                display: inline-block;
+                                            }
+                                            
+                                            #navbar #nav-menu ul li {
+                                                display: inline-block;
+                                                margin-right: 28px;
+                                                position: relative;
+                                            }
+                                            
+                                            #navbar #nav-menu ul li a {
+                                                text-decoration: none;
+                                                color: rgb(30, 29, 29, 87%);
+                                                font-weight: 400;
+                                                font-family: 'Ubuntu', sans-serif;
+                                                transition: 0.3s ease;
+                                            }
+                                            
+                                            /* nav cart */
+                                            .nav-right {
+                                                display: inline;
+                                                position: absolute;
+                                                right: 60px;
+                                                text-decoration: none;
+                                            
+                                            }
+                                            
+                                            #Nav-cart {
+                                            
+                                                font-size: 26px;
+                                                list-style: none;
+                                            
+                                            }
+                                            #Nav-cart:before{
+                                                content: attr(data-count);
+                                                color: brown;
+                                                position: absolute;
+                                                 left: 2px;
+                                                font-size: 16px;
+                                                text-align: center;
+                                                top: 9px;
+                                                 font-weight: 900;
+                                                opacity: 0;
+                                                width: 20px;
+                                            }
+                                            
+                                            #Nav-cart.zero:before{
+                                                opacity: 1;
+                                            }
+                                            #Nav-cart a {
+                                                color: rgb(30, 29, 29, 87%);
+                                                text-decoration: none;
+                                                
+
+                                            }
+                                            #Nav-cart span{
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                font-family: "Work Sans", sans-serif;
+                                                text-decoration: none;
+                                                color: brown;
+                                                position: relative;
+                                                right: 18px;
+                                                bottom: 2px;
+                                            }
+                                            
+                                            #Nav-cart a:hover {
+                                                color: brown;
+                                            }
+                                            
+                                            
+                                            /* menu bar section */
+                                            
+                                            .menu-bar {
+                                                display: none;
+                                                position: absolute;
+                                                float: right;
+                                                right: 39px;
+                                                font-size: 20px;
+                                                color: rgb(30, 29, 29, 87%);
+                                            }
+                                            
+                                            .menu-bar:hover {
+                                                color: brown;
+                                            }
+                                            
+                                            
+                                            #navbar #nav-menu ul li a:hover  {
+                                                color: brown;
+                                            }
+                                            
+                                             
+                                            
+                                            
+
+ 
+                                          /* Mid Msg */
+
+  .topmsg h2{
+  margin-top: 9rem;
+  text-align: center;
+  margin-bottom: 2em;
+  color:#333333;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+   }
+ 
+
+main{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.product_container
+{
+    position: relative;
+    width: 60%;
+    left: 40px;
+    height: 100%;
+}
+
+ 
+ 
+
+.Productdetail{
+/* position: relative; */
+ top: 10px;
+}
+.Productdetail a{
+    text-decoration: none;
+    
+}
+.Productdetail .p{
+    max-height: 230px;
+    
+}
+
+.Productdetail .product{
+   height: 200px;
+}
+.Productdetail .product img{
+    top: 7px;
+    width: 140px;
+    height: 180px;
+    position: relative;
+    left: 40px;
+}
+.Productdetail .product .name{
+
+    margin-left: 210px;
+    position: relative;
+    top: -165px;
+    
+    font-family: "Work Sans", sans-serif;
+    color: #777777;
+}
+.Productdetail .product .size
+{
+    position: relative;
+    
+    top: -10em;
+     
+    left: 230px;
+    display: flex;
+}
+.Productdetail .product .size h4{
+    position: relative;
+    right: 19px;
+     
+    font-family: "Work Sans", sans-serif;
+    color: #777777;
+    font-weight: 400;
+}
+.Productdetail .product .size p{
+    font-family: "Work Sans", sans-serif;
+    color: #333333;
+    position: relative;
+    top: 5px;
+    right: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+ 
+
+.Productdetail .qty
+{
+    
+    display: flex;
+    position: relative;
+    top: -8em;
+    left: 28em;
+}
+.Productdetail .qty h6{
+position: relative;
+font-family: "Work Sans", sans-serif;
+font-weight: 400;
+font-size: 16px;
+top: -13px;
+color: #777777;
+}
+.Productdetail .qty p{
+position: relative;
+font-family: "Work Sans", sans-serif;
+color: #333333;
+top: 7px;
+font-weight: 500;
+}
+
+.Productdetail .price{
+    position: relative;
+    display: flex;
+    top: -13em;
+    left: 35em;
+}
+
+.Productdetail .price h6{
+    position: relative;
+    font-family: "Work Sans", sans-serif;
+font-weight: 400;
+font-size: 16px;
+top: -26px;
+color: #777777;
+}
+.Productdetail .price p{
+    position: relative;
+font-family: "Work Sans", sans-serif;
+color: #333333;
+top: -5px;
+}
+
+.delete{
+    position: relative;
+    top:-294px;
+    float: right;
+    right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.delete a{
+    color: #777777;
+
+
+}
+
+.Productdetail .linedown{
+    position: relative;
+    top: -12em;
+}
+
+.total{
+    height: 100%;
+    text-align: center;
+    width: 30%;
+    /* position: relative; */
+    position:fixed;
+    
+    display: inline-block;
+    /* margin-top: -44em; */
+    margin-top: 300px;
+   
+    left: 52em;
+    background: #333333;
+    padding-top: 34px;
+    padding-bottom: 15px;
+}
+.total .SUBTOTAL{
+align-items: center;
+    display: inline-flex;
+}
+
+.total .SUBTOTAL h4{
+    color: #999999;
+    font-size: 24px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -24px;
+    right: 15px;
+   
+}
+
+.total .SUBTOTAL .subpkr{
+
+    color: #999999;
+    font-size: 24px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -24px;
+    right: 7px;
+}
+
+
+.total .grandtotal{
+
+position: relative;
+top: -50px;
+color: #ffffff;
+  
+    /* margin-top: 14px; */
+    text-align: center;
+
+}
+
+.total .grandtotal h4{
+    font-family: 'Barlow', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1px;
+
+}
+
+.btn-to-chk-out{
+
+position: relative;
+top: -40px;
+background: #ffffff;
+display: inline;
+color: #333333;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 30px;
+padding-right: 30px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+
+}
+.btn-to-chk-out:hover{
+    background: #fa8888;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-to-chk-out a{
+    letter-spacing: 0.04em;
+    font-size: 13px;
+    font-family: "Work Sans", sans-serif;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cont-shopping{
+    position: relative;
+    
+    left: 35px;
+}
+.cont-shopping a{
+
+    color: #333333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cont-shopping a:hover p{
+    text-decoration:underline;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.cont-shopping a i{
+
+font-size: 30px;
+position: relative;
+top: -1px;
+}
+
+.cont-shopping p{
+    position: relative;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    font-family: "Work Sans", sans-serif;
+}
+
+ 
+ 
